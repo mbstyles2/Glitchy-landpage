@@ -268,6 +268,222 @@
       font-size:0.95rem;
     }
 
+    
+/* =========================
+   📱 MOBILE (≤ 480px)
+   ========================= */
+@media (max-width: 480px) {
+
+  .container {
+    padding: 10px 16px;
+  }
+
+  /* NAV */
+  nav {
+    flex-direction: column;
+    gap: 16px;
+    padding: 14px 0;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 140px 0 90px;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+    line-height: 1.15;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 40px;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+
+  /* FEATURES */
+  .features {
+    padding: 80px 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 28px 20px;
+  }
+
+  /* PLATFORMS */
+  .platforms {
+    padding: 70px 0;
+  }
+
+  .platform-logos {
+    gap: 28px;
+  }
+
+  .platform-logos img {
+    height: 42px;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: 80px 0;
+  }
+
+  .faq h2 {
+    font-size: 2.2rem;
+  }
+
+  .faq-question {
+    font-size: 1.05rem;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 90px 0;
+  }
+
+  .cta h2 {
+    font-size: 2.4rem;
+  }
+
+  .cta p {
+    font-size: 1.05rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  footer {
+    padding: 60px 0 30px;
+  }
+}
+
+
+/* =========================
+   📲 TABLET (481px – 1024px)
+   ========================= */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+  .container {
+    padding: 12px 20px;
+  }
+
+  /* NAV */
+  nav {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .nav-links a {
+    margin-left: 18px;
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 16px 34px;
+    font-size: 1.1rem;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 160px 0 110px;
+  }
+
+  .hero h1 {
+    font-size: 3.6rem;
+  }
+
+  .hero p {
+    font-size: 1.15rem;
+  }
+
+  .hero-stats {
+    gap: 40px;
+  }
+
+  .stat-number {
+    font-size: 2.6rem;
+  }
+
+  /* FEATURES */
+  .features {
+    padding: 100px 0;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .feature-card {
+    padding: 32px 24px;
+  }
+
+  /* PLATFORMS */
+  .platforms {
+    padding: 90px 0;
+  }
+
+  .platform-logos img {
+    height: 56px;
+  }
+
+  /* FAQ */
+  .faq h2 {
+    font-size: 2.6rem;
+  }
+
+  /* CTA */
+  .cta h2 {
+    font-size: 3rem;
+  }
+
+  .cta p {
+    font-size: 1.2rem;
+  }
+
+  .cta-buttons {
+    gap: 18px;
+  }
+
+  footer {
+    padding: 70px 0 34px;
+  }
+}
+
+
     @media (max-width:768px) {
       .hero { padding:140px 0 100px; }
       .hero h1 { font-size:3.8rem; }
