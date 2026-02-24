@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glitchy – Earn $750–$1000 Weekly with Affiliate Offers</title>
+  <meta name="description" content="Glitchy is the easiest way to earn money promoting top offers. $8–$10 payouts, weekly payouts, zero investment required."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8b5cf6;
+      --primary-dark: #7c3aed;
+      --dark: #0f0f17;
+      --gray: #1e1e2e;
+      --light: #f8f9ff;
+      --text: #e2e8f0;
+      --green: #10b981;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(135deg, #0f0f17 0%, #1a1a2e 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(15, 15, 23, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(139, 92, 246, 0.15);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #c084fc, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 32px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .btn {
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+    }
+
+    .hero {
+      padding: 180px 0 140px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(3.2rem, 8vw, 6.5rem);
+      font-weight: 800;
+      line-height: 1.05;
+      margin-bottom: 24px;
+      background: linear-gradient(90deg, #fff, #c084fc, #a78bfa, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% auto;
+      animation: gradientFlow 8s linear infinite;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+
+    .hero p {
+      font-size: 1.35rem;
+      color: #a0a0c0;
+      max-width: 680px;
+      margin: 0 auto 40px;
+      line-height: 1.5;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      margin-top: 8px;
+    }
+
+    .features {
+      padding: 120px 0;
+      background: rgba(15, 15, 23, 0.6);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 32px;
+      margin-top: 60px;
+    }
+
+    .feature-card {
+      background: rgba(30, 30, 46, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      border-radius: 16px;
+      padding: 40px 32px;
+      transition: all 0.4s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-12px);
+      border-color: var(--primary);
+      box-shadow: 0 20px 40px rgba(139, 92, 246, 0.12);
+    }
+
+    .feature-icon {
+      font-size: 3.5rem;
+      margin-bottom: 24px;
+      color: var(--primary);
+    }
+
+    .feature-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+
+    .platforms {
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .platforms h2 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+
+    .platform-logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 60px;
+      filter: grayscale(70%);
+      opacity: 0.9;
+      transition: all 0.4s;
+    }
+
+    .platform-logos img {
+      height: 70px;
+      transition: all 0.4s;
+    }
+
+    .platform-logos img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: scale(1.15);
+    }
+
+    .cta {
+      padding: 140px 0;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(139,92,246,0.08) 0%, rgba(59,130,246,0.05) 100%);
+    }
+
+    .cta h2 {
+      font-size: 3.8rem;
+      margin-bottom: 24px;
+    }
+
+    .cta p {
+      font-size: 1.4rem;
+      color: #a0a0c0;
+      max-width: 720px;
+      margin: 0 auto 40px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .btn-large {
+      padding: 18px 48px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      border-radius: 60px;
+    }
+
+    footer {
+      padding: 80px 0 40px;
+      text-align: center;
+      border-top: 1px solid rgba(139,92,246,0.1);
+    }
+
+    footer p {
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding: 140px 0 100px; }
+      .hero h1 { font-size: 3.8rem; }
+      .hero p { font-size: 1.15rem; }
+      .hero-stats { gap: 40px; }
+      .stat-number { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="container">
+      <div class="logo">Glitchy</div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#how">How It Works</a>
+        <a href="#cta" class="btn btn-primary">Join Now – Free</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Earn $750–$1000 Weekly Promoting Top Offers</h1>
+      <p>Zero investment. $8–$10 payouts per action. Weekly payouts. Completely free to join + $10 sign-up bonus.</p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number">$10,548</div>
+          <div class="stat-label">Earnings Yesterday</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">16,143</div>
+          <div class="stat-label">Clicks Yesterday</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">7.3%</div>
+          <div class="stat-label">Average Conversion Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 style="text-align:center; margin-bottom:3rem;">Why Thousands Are Earning with Glitchy</h2>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💸</div>
+          <h3>$750–$1000+ Weekly</h3>
+          <p>Top offers pay $8–$10 per completed action. Many users earn 4–6 figures monthly.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Zero Upfront Cost</h3>
+          <p>No investment needed. All tools are free. Start with literally $0 in your bank account.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Promote Anywhere</h3>
+          <p>Use TikTok, Instagram, YouTube, Snapchat, Pinterest — or any platform you already have.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Unique Tracking Links</h3>
+          <p>Get your own personalized link for every offer. Full transparency on clicks & conversions.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>Weekly Payouts</h3>
+          <p>Get paid every 7 days (Net-7). Fast, reliable, trusted by thousands of affiliates.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎁</div>
+          <h3>$10 Sign-Up Bonus</h3>
+          <p>Join through Google search or the link in bio — get $10 instantly credited after sign-up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platforms -->
+  <section class="platforms" id="platforms">
+    <div class="container">
+      <h2>Promote on Any Platform You Love</h2>
+      <div class="platform-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/TikTok_logo.svg/512px-TikTok_logo.svg.png" alt="TikTok">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/512px-Instagram_logo_2016.svg.png" alt="Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/512px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pinterest_logo.svg/512px-Pinterest_logo.svg.png" alt="Pinterest">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <h2>Ready to Start Earning Today?</h2>
+      <p>Join thousands already making money with zero investment. $10 sign-up bonus + weekly payouts.</p>
+
+      <div class="cta-buttons">
+        <a href="https://glitchyacademy.com" target="_blank" class="btn btn-primary btn-large">Join Glitchy – Free</a>
+        <a href="https://glitchyacademy.com" target="_blank" class="btn btn-outline btn-large" style="background:transparent; border:2px solid var(--primary); color:var(--primary);">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Glitchy. All rights reserved. Built for affiliates who want real results.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
